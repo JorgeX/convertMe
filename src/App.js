@@ -11,9 +11,9 @@ class App extends Component {
           <h2>Convert me!</h2>
         </div>
         <p className="App-intro">
-          TODO: what would I want to convert
+          What would you like to convert today?
           <p>fahrenheit - Celsius</p>
-          <p>dollarz - euros</p>
+          <p>dollarz - euros (with the last checkdate)</p> 
           <p>Price with states tax percent would be nice</p>
           <p>miles - kilometers</p>
           <p>feet - centimeters</p>
