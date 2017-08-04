@@ -12,6 +12,14 @@ class App extends Component {
         </div>
         <p className="App-intro">
           TODO: what would I want to convert
+          <p>fahrenheit - Celsius</p>
+          <p>dollarz - euros</p>
+          <p>Price with states tax percent would be nice</p>
+          <p>miles - kilometers</p>
+          <p>feet - centimeters</p>
+          <p>pounds - kilograms</p>
+          <p>ounces - grams</p>
+          <p>gallons - litres</p>
         </p>
       </div>
     );
