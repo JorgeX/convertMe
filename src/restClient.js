@@ -1,10 +1,6 @@
 /**
- * Obviously, for the rest calls
- * get some apis here:
- * ** Currency Courses **
- *   http://api.fixer.io/latest
- * 
- * 
- */
+* Obviously, for the rest calls
+*/
 
- let currencyUrl = 'http://api.fixer.io/latest';
+ const currencyUrl = 'http://api.fixer.io/latest';
+ const taxRatesUrl = 'https://developer.avalara.com/api-reference/avatax/rest/v1/';
