@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './calculator.svg';
 import './App.css';
 
 class App extends Component {
@@ -10,7 +10,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Convert me!</h2>
         </div>
-        <p className="App-intro">
+        <div className="App-intro">
           What would you like to convert today?
           <p>fahrenheit - Celsius</p>
           <p>dollarz - euros (with the last checkdate)</p> 
@@ -20,7 +20,7 @@ class App extends Component {
           <p>pounds - kilograms</p>
           <p>ounces - grams</p>
           <p>gallons - litres</p>
-        </p>
+        </div>
       </div>
     );
   }
