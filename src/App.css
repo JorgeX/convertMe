@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  animation: App-logo-spin infinite 60s linear;
   height: 80px;
 }
 
@@ -16,6 +16,11 @@
 
 .App-intro {
   font-size: large;
+}
+input[type=button]{
+  background-color: lightgray;
+  border-radius: 4px;
+  margin: 0 4px;
 }
 
 @keyframes App-logo-spin {
