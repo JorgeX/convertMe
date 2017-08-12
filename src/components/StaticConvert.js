@@ -1,10 +1,24 @@
 import React, { Component } from 'react';
 
+const PRIMARY = 'primary';
+const SECONDARY = 'secondary';
+
 export default class StaticConvert extends Component{
 
     constructor(props){
         super(props);
         this.convert = this.convert.bind(this);
+        this.setState({
+                mode: PRIMARY
+            }
+        );
+    }
+
+    flipState(){
+        let newMode = this.state.mode === PRIMARY ? SECONDARY : PRIMARY;
+            this.setState({
+                mode: newMode
+            });
     }
 
     convert(){
