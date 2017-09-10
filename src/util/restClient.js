@@ -2,17 +2,18 @@
 * Obviously, for the rest calls
 */
 
+//TODO apikeys
  const currencyUrl = 'http://api.fixer.io/latest';
  const taxRatesUrl = 'https://developer.avalara.com/api-reference/avatax/rest/v1/';
 
  export default class RestClient{
 
     static getCurrencyRates(success, failure, currencies){
-        //TODO
+        ajaxGet(currencyUrl, currencies, success, failure);
     }
 
     static getSalesTaxPercentage(success, failure, state){
-        //TODO
+        ajaxGet(taxRatesUrl,state, success, failure);
     }
  }
 
