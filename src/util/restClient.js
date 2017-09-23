@@ -2,9 +2,18 @@
 * Obviously, for the rest calls
 */
 
+const currencyUrl = 'http://api.fixer.io/latest';
 //TODO apikeys
- const currencyUrl = 'http://api.fixer.io/latest';
- const taxRatesUrl = 'https://developer.avalara.com/api-reference/avatax/rest/v1/';
+const taxRatesUrl = 'https://developer.avalara.com/api-reference/avatax/rest/v1/';
+
+const taxRatesCanada = 'http://api.salestaxapi.ca';
+
+/** Exhanges REST API ***/ 
+ const getExchangesUrl = 'https://api.fixer.io/latest';
+ const getSpecificExchanges = 'https://api.fixer.io/latest?symbols=USD,GBP';//base = EURO
+ const getExchangesAgainst = 'https://api.fixer.io/latest?base=USD'; //change base
+
+
 
  export default class RestClient{
 
