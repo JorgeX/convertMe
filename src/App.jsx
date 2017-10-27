@@ -5,6 +5,7 @@ import StaticConvert from './components/StaticConvert';
 
 class App extends Component {
   render() {
+    /* for item in convertedItems jne. */
     return (
       <div className="App">
         <div className="App-header">
@@ -12,7 +13,7 @@ class App extends Component {
           <h2>Convert me!</h2>
         </div>
         <div className="App-intro">
-          What would you like to convert today?
+          <p>What would you like to convert today?</p>
           <StaticConvert primary='inch' result='centimeter'/>
           <p>fahrenheit - Celsius</p>
           <p>dollarz - euros (with the last checkdate)</p> 

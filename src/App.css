@@ -18,13 +18,69 @@
   font-size: large;
 }
 
-input[type=button]{
-  background-color: lightgray;
-  border-radius: 4px;
-  margin: 0 4px;
-}
-
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+/* static form*/
+/*Hack to get them to align properly */
+
+.conversion_notused  {
+  height:100vh;
+  width:100%;
+}
+
+.flex-form > *:not([type="date"]) {
+  border-top:1px solid white;
+  border-bottom:1px solid white;
+}
+
+input.flex-form-convert{
+  background:#FF5A5F;
+  border-top: 1px solid #FF5A5F;
+  border-bottom: 1px solid #FF5A5F;
+  color:white;
+}
+
+input.flex-form-switch{
+  background:#6D89F8;
+  border-top: 1px solid #6D89F8;
+  border-bottom: 1px solid #6D89F8;
+  color:white;
+}
+
+.flex-form > * {
+  border:0;
+  padding:10px;
+  background:white;
+  line-height:50px;
+  font-size: 20px;
+  border-radius:0;
+  outline:0;
+  border-right:1px solid rgba(0,0,0,0.2);
+  -webkit-appearance:none;
+}
+
+.flex-form > *:last-child {
+  border-right: 0;
+}
+
+/*Flexbox Starts Here*/
+
+.conversion {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  
+}
+
+.flex-form {
+  z-index: 10;
+  border:2px solid rgba(0,0,0,0.3);
+  border-radius:5px;
+  display:flex;
+}
+
+input[type="search"] {
+  flex-basis:500px;
 }

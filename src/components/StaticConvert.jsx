@@ -8,10 +8,9 @@ export default class StaticConvert extends Component{
     constructor(props){
         super(props);
         this.convert = this.convert.bind(this);
-        this.setState({
+        this.state = {
                 mode: PRIMARY
-            }
-        );
+            };
     }
 
     toggleMode(){
@@ -27,7 +26,7 @@ export default class StaticConvert extends Component{
     }
 
     render() {
-        return(
+        /*return(
             <div className='conversion'>
                 <div className="primaryLabel">{this.props.primary}</div>
                 <div className="resultLabel">{this.props.result}</div>
@@ -35,6 +34,21 @@ export default class StaticConvert extends Component{
                 <span className="count"><input type="button" value="<=>" onClick={this.convert}/></span>
                 <span className="result_input"><input type="text" /></span>
             </div>
+        );*/
+        
+        return( 
+            <div className="conversion">
+                <form  className="flex-form">
+                    <input type="search" placeholder="convert from"/>
+                    <label htmlFor="from">From</label>
+                    <input className="flex-form-convert" type="submit" value="Convert"/>
+                    <label htmlFor="from">To</label>
+                    <input type="search" placeholder="convert to"/>
+                    <input className="flex-form-switch" type="submit" value="Switch"/>
+                </form>
+            </div>
         );
+
+
     }
 }
