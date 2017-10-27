@@ -35,14 +35,14 @@
   border-bottom:1px solid white;
 }
 
-input.flex-form-convert{
+.flex-form input[type="submit"].flex-form-convert{
   background:#FF5A5F;
   border-top: 1px solid #FF5A5F;
   border-bottom: 1px solid #FF5A5F;
   color:white;
 }
 
-input.flex-form-switch{
+.flex-form input[type="submit"].flex-form-switch{
   background:#6D89F8;
   border-top: 1px solid #6D89F8;
   border-bottom: 1px solid #6D89F8;
@@ -53,7 +53,6 @@ input.flex-form-switch{
   border:0;
   padding:10px;
   background:white;
-  line-height:50px;
   font-size: 20px;
   border-radius:0;
   outline:0;
